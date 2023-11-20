@@ -8,11 +8,13 @@ public class DatabaseTest {
 
     @Test
     public void checkBunsCount() {
-        Assert.assertEquals("Количество булочек не совпадает", 3, database.availableBuns().size());
+        int expectedBunsCount = 3;
+        Assert.assertEquals("Количество булочек не совпадает", expectedBunsCount, database.availableBuns().size());
     }
 
     @Test
     public void checkIngredientsCount() {
-        Assert.assertEquals("Количество ингредиентов не совпадает", 6, database.availableIngredients().size());
+        int expectedIngredientsCount = 6;
+        Assert.assertEquals("Количество ингредиентов не совпадает", expectedIngredientsCount, database.availableIngredients().size());
     }
 }

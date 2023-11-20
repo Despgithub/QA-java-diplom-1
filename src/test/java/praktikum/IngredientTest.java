@@ -14,8 +14,9 @@ public class IngredientTest {
 
     @Test
     public void getIngredientPriceTest() {
+        int expectedPrice = 15;
         Ingredient ingredient = new Ingredient(IngredientType.SAUCE, "Соус традиционный галактический", 15);
-        Assert.assertEquals("Цена не совпадает", 15, ingredient.getPrice(), 0);
+        Assert.assertEquals("Цена не совпадает", expectedPrice, ingredient.getPrice(), 0);
     }
 
     @Test
